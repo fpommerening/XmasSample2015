@@ -9,7 +9,7 @@ namespace FP.XmasSample2015.XmasTimer
         {
             Get["/"] = _ =>
             {
-                var lastChance = new DateTime(2015, 12, 25, 18, 0, 0);
+                var lastChance = new DateTime(2015, 12, 24, 18, 0, 0);
 
                 var tsCountdown = lastChance - DateTime.Now;
                 return string.Format("Restzeit zum Einkauf der Geschenke {0} Tage {1} Stunden {2} Minuten.", tsCountdown.Days,
